@@ -87,4 +87,5 @@ figh_m = 0 ;
 %-- Now generate the figure with labels for psfrag
 figure(1)
 figure_eps(figw, figh, figw_m, figh_m, 'figs/uavg_eps');
-    
+
+% test
