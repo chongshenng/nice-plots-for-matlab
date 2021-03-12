@@ -98,7 +98,7 @@ t1.Visible = 'off';     % Switches off text
 h1.Visible = 'off';     % Switches off line plot
 hlin.Visible = 'off';   % Switches off linear plot
 hlog.Visible = 'off';   % Switches off log plot
-export_fig('figs/uavg_raw_bg','-rgb','-png','-m2');
+export_fig('figs/uavg_raw_bg','-rgb','-png','-m2'); %background only
 
 %-- Now save the figure without the patch
 h = findall(gcf,'type','patch');  delete(h);
@@ -109,7 +109,8 @@ hlin.Visible = 'on';
 hlog.Visible = 'on';
 set(gcf,'Color','none');
 set(gca,'Color','none');
-export_fig('figs/uavg_raw','-rgb','-pdf');
+export_fig('figs/uavg_raw','-rgb','-pdf'); %pdf version
+export_fig('figs/uavg_raw','-rgb','-eps'); %eps version
 
 % %% PLOTTING OPTION 2
 % %-- For more 'hardcore' control, I use figure_eps, which is a
