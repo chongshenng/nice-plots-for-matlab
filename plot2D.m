@@ -130,4 +130,3 @@ export_fig('figs/uavg_raw','-rgb','-eps'); %eps version
 % %-- Now generate the figure with labels for psfrag
 % figure(1)
 % figure_eps(figw, figh, figw_m, figh_m, 'figs/uavg_eps');
-    
