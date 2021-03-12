@@ -11,6 +11,11 @@ This is a repository containing scripts for plotting nice MATLAB plots.
   2. In the folder `/figs-publication`, compile `uavg.tex` using `pdflatex`.
   3. In the same folder, execute `pdfcrop uavg.pdf` in terminal to trim the bounding boxes.
 
+### Tips for capstyles:
+* By default, Matlab renders a square linecap style in the eps figure. You can change this to make it more appealing!
+* Open the eps file _in a text editor_ (e.g. `vi`). Then, look for the line corresponding to the `setlinecap`, and change the value from 0 to 1.
+* For example, in `figs/uavg_raw.eps`, the `setlinecap` is defined as `/J`. You can find this on line 435 as `0 J`. Changing it to `1 J` will produce a rounded linecap.
+
 ### Example 2: 3D plot
 
 ### Example 3: Generating sequence of images
